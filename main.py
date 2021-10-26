@@ -8,12 +8,12 @@ class Asiento:
         if color=="rojo" or color=="amarillo" or color=="verde" or color=="negro" or color=="blanco":
             self.color=color
 class Auto:
-    def __init__(self,modelo,precio,asientos,marca,motor,registro,cantidadCreados):
+    def __init__(self,modelo,precio,asientos,marca,Motor,registro,cantidadCreados):
         self.modelo=modelo
         self.precio=precio
         self.asientos=asientos
         self.marca=marca
-        self.motor=motor
+        self.motor=Motor
         self.registro=registro
         self.cantidadCreados=cantidadCreados
     def cantidadAsientos(self):
