@@ -8,20 +8,21 @@ class Asiento:
         if color=="rojo" or color=="amarillo" or color=="verde" or color=="negro" or color=="blanco":
             self.color=color
 class Auto:
-    def __init__(self,modelo,precio,asientos,marca,Motor,registro,cantidadCreados):
+    cantidadCreados=0
+    def __init__(self,modelo,precio,asientos,marca,Motor,registro):
         self.modelo=modelo
         self.precio=precio
         self.asientos=asientos
         self.marca=marca
         self.motor=Motor
         self.registro=registro
-        self.cantidadCreados=cantidadCreados
+        
     def cantidadAsientos(self):
-        cont=0
+        cantidad=0
         for i in self.asientos:
             if type(i)==Asiento:
-                cont+=1
-        return cont
+                cantidad+=1
+        return cantidad
     def verificarIntegridad(self):
         if self.motor.registro==self.registro:
             for i in self.asientos:
