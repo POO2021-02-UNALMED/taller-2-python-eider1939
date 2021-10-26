@@ -1,6 +1,6 @@
 import random
 class Asiento:
-    def _init_(self,color, precio, registro):
+    def __init__(self,color, precio, registro):
         self.color=color
         self.precio=precio
         self.registro=registro
@@ -16,7 +16,7 @@ class Auto:
         self.marca=marca
         self.motor=Motor
         self.registro=registro
-        
+
     def cantidadAsientos(self):
         cantidad=0
         for i in self.asientos:
